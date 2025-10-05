@@ -1,0 +1,80 @@
+.backwardButton {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.backwardButton:hover {
+    background-color: #b20710; 
+}
+
+.detailContainer {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.posterImage {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.infoContainer {
+    flex: 1;
+    min-width: 300px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.details {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.overview {
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.navButton {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.navButton:hover:not(.disabled) {
+    background-color: #b20710; 
+}
+
+.navButton.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

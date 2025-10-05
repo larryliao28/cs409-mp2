@@ -1,0 +1,92 @@
+.head {
+    color: aliceblue;
+    margin-bottom: 25px;
+    font-size: 20em;
+}
+
+.genreContainer {
+    margin-bottom: 30px;
+}
+
+.subTitle {
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.genreButton {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #3a3a3a;
+    border-radius: 3px;
+    cursor: pointer; 
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s; 
+}
+
+.genreButton:hover {
+  background-color: #4a4a4a;
+  transform: translateY(-3px);
+} 
+
+.active {
+  background-color: #e50914; 
+}
+
+.active:hover {
+  background-color: #b20710; 
+}
+
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; 
+}
+
+.movie {
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #2a2a2a;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie:hover {
+  transform: scale(1.03);
+}
+
+.posterImage {
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.movieInformation {
+    padding: 10px;
+}
+
+.movieTitle {
+  margin: 0 0 10px 0;
+} 
+
+.movieDetail {
+  margin: 5px 0;
+}
+
+.rating {
+    margin: 5px 0;
+    color: #ffd700;
+}
+
+
+
+
+

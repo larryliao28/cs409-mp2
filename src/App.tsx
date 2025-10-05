@@ -10,7 +10,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter basename='/cs409-mp2'> 
+    <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/cs409-mp2' : ''}> 
       <div className={styles.appContainer}>
         {/* Navigation bar at the top */}
         <Navigation /> 
